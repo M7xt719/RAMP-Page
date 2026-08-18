@@ -215,8 +215,10 @@
       <a href="#autoplay">Auto-player</a>
       <a href="#modes">Modes &amp; transpose</a>
       <a href="#convert">Convert to MIDI</a>
+      <a href="#editor">Editor <span style="color:var(--teal)">NEW</span></a>
       <a href="#live">Live play</a>
       <a href="#visualizer">Visualizer</a>
+      <a href="#render">Render <span style="color:var(--teal)">NEW</span></a>
       <a href="#customize">Customize</a>
       <a href="#how">How it works</a>
       <a href="#architecture">Architecture</a>
@@ -225,23 +227,39 @@
       <a href="#pricing">Limit Breaker</a>
       <a href="#faq">FAQ</a>
       <a href="#safe">Safety</a>
+      <a href="#whatsnew">What&rsquo;s new in 4.5</a>
     </nav>
   </div>
 </header>
 
 <a id="top"></a>
 <div class="hero" id="overview"><div class="wrap">
-  <div class="kicker">Roblox Auto MIDI Player · v4.0 · open-source</div>
+
+  <div id="cd" style="border:1px solid var(--teal);border-radius:14px;padding:20px 22px;margin:0 0 26px;background:linear-gradient(180deg,rgba(0,0,0,.35),transparent)">
+    <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:6px">Arriving Friday 28 August</div>
+    <div style="font-size:clamp(22px,4vw,34px);font-weight:700;line-height:1.15;margin-bottom:14px">
+      RAMP <span class="g">v4.5</span> — the Editor update
+    </div>
+    <div id="cdclock" style="display:flex;gap:14px;flex-wrap:wrap;font-variant-numeric:tabular-nums">
+      <div><b id="cdd" style="font-size:clamp(28px,5vw,46px);display:block;line-height:1">--</b><span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.65">days</span></div>
+      <div><b id="cdh" style="font-size:clamp(28px,5vw,46px);display:block;line-height:1">--</b><span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.65">hours</span></div>
+      <div><b id="cdm" style="font-size:clamp(28px,5vw,46px);display:block;line-height:1">--</b><span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.65">minutes</span></div>
+      <div><b id="cds" style="font-size:clamp(28px,5vw,46px);display:block;line-height:1;color:var(--teal)">--</b><span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.65">seconds</span></div>
+    </div>
+    <p style="margin:14px 0 0;opacity:.8;font-size:14px">A brand-new <b>Editor</b>. A <b>rebuilt Visualizer</b>. Offline <b>video rendering</b> up to 4K. Settings rebuilt from scratch. Ten million notes, no crash.</p>
+  </div>
+
+  <div class="kicker">Roblox Auto MIDI Player · v4.5 · open-source</div>
   <h1>The best Roblox<br>piano player of<br><span class="g">2026.</span></h1>
-  <p class="sub">Load a MIDI and RAMP performs it on any Roblox piano with human timing and live velocity. Convert audio, video, and sheet music into MIDI. Play a real keyboard live. All in one portable app.</p>
+  <p class="sub">Load a MIDI and RAMP performs it on any Roblox piano with human timing and live velocity. Convert audio, video and sheet music into MIDI — then <b>edit that MIDI on a piano roll drawn over the sound it came from</b>, so you can see why every note is there. Play a real keyboard live. All in one portable app.</p>
   <div class="hero-cta">
     <a href="https://github.com/M7xt719/RAMP/releases/latest" target="_blank" rel="noopener" class="btn btn-p">↓ Download for Windows</a>
     <a href="#autoplay" class="btn btn-g">Explore the features</a>
   </div>
   <div class="hero-stats">
-    <div class="s"><b>11</b><span>feature tabs</span></div>
-    <div class="s"><b>128</b><span>notes mappable</span></div>
-    <div class="s"><b>10k+</b><span>notes/sec visualizer</span></div>
+    <div class="s"><b>12</b><span>feature tabs</span></div>
+    <div class="s"><b>10M+</b><span>notes editable</span></div>
+    <div class="s"><b>6.2M</b><span>notes drawn in 2 ms</span></div>
     <div class="s"><b>£0</b><span>free &amp; open-source</span></div>
   </div>
 </div></div>
@@ -249,19 +267,20 @@
 <!-- OVERVIEW SUMMARY -->
 <section><div class="wrap">
   <div class="kicker">What's inside</div>
-  <h2>Eleven tabs, one app.</h2>
+  <h2>Twelve tabs, one app.</h2>
   <p class="lead">RAMP isn't a single-trick autoplayer — every tab is a full tool. Here's the whole surface at a glance; each one is documented in detail below.</p>
   <div class="grid3">
     <div class="card"><div class="ic">▶️</div><h3>Player</h3><p>The auto-player: load a MIDI, human-like performance, speed, transpose, sustain, panic.</p></div>
     <div class="card"><div class="ic">🎹</div><h3>Connect</h3><p>Play a real MIDI keyboard (USB or Bluetooth) and RAMP presses the keys live.</p></div>
-    <div class="card"><div class="ic">🌈</div><h3>Visualizer</h3><p>Full black-MIDI Synthesia-style falling-notes engine at 60 fps.</p></div>
+    <div class="card"><div class="ic">🌈</div><h3>Visualizer</h3><p>Rebuilt in 4.5 — new GPU renderer, bloom, skins, and seven pages of control.</p></div>
     <div class="card"><div class="ic">🎬</div><h3>Transcribe</h3><p>Audio → MIDI, video → MIDI, and PDF sheet music → MIDI, all local.</p></div>
+    <div class="card"><div class="ic">✏️</div><h3>Editor <span style="color:var(--teal);font-size:12px">NEW</span></h3><p>Edit any MIDI on a piano roll drawn over its own audio — and see the evidence for every note.</p></div>
     <div class="card"><div class="ic">🔤</div><h3>Qwerty Sheet</h3><p>Turn a MIDI into a letter sheet with playability levels and practice mode.</p></div>
     <div class="card"><div class="ic">⌨️</div><h3>PianoBinds</h3><p>Remap all 88 keys to match the in-game NoteBinds panel exactly.</p></div>
     <div class="card"><div class="ic">🎚️</div><h3>Velocity</h3><p>Dynamics: auto-volume, velocity curves, auto-velocity from note density.</p></div>
     <div class="card"><div class="ic">🎯</div><h3>Octave</h3><p>Range modes and octave handling for whatever piano you're on.</p></div>
-    <div class="card"><div class="ic">⚙️</div><h3>Settings</h3><p>Hotkeys, overlay, focus guard, sound output, playlist behaviour.</p></div>
-    <div class="card"><div class="ic">📋</div><h3>Logs</h3><p>Live activity log — see every transpose decision and key press.</p></div>
+    <div class="card"><div class="ic">⚙️</div><h3>Settings</h3><p>Rebuilt in 4.5: a sidebar with search across every setting, in six groups.</p></div>
+    <div class="card"><div class="ic">📋</div><h3>Logs</h3><p>Rebuilt in 4.5: filter by category, search, pause, follow, copy or save.</p></div>
     <div class="card"><div class="ic">🎨</div><h3>Customize</h3><p>Full theming — every colour, gradients, background images, fonts, scale.</p></div>
     <div class="card"><div class="ic">◱</div><h3>Simple mode</h3><p>A compact 6-tab window for when you just want to play, not tweak.</p></div>
   </div>
@@ -432,6 +451,28 @@
 </div></section>
 
 <!-- LIVE -->
+<!-- EDITOR -->
+<section id="editor"><div class="wrap">
+  <div class="kicker">New in 4.5</div>
+  <h2>An editor that shows its working.</h2>
+  <p class="lead">Every transcription is a guess. RAMP is the only one that lets you check the guess &mdash; by drawing the sound the notes came from directly behind them, on the same axes.</p>
+
+  <div class="grid3">
+    <div class="card"><div class="ic">🔍</div><h3>The sound, behind the notes</h3><p>A <b>constant-Q spectrogram</b> whose rows <i>are</i> piano keys. A normal FFT puts A0 and A&#9839;0 in the same bin &mdash; so the bass, where transcription goes wrong most, is exactly where it&rsquo;s blindest. Verified exact at A0, A440 and C8.</p></div>
+    <div class="card"><div class="ic">🎬</div><h3>The video, unrolled</h3><p>One thin slice from every frame, stood side by side, so the whole video becomes a single picture on the same axes as your MIDI. Your notes sit on the pixels they were read from. Tested to within one frame.</p></div>
+    <div class="card"><div class="ic">⚖️</div><h3>A verdict per note</h3><p>Click any note: <i>clearly heard</i>, <i>nothing much is sounding here</i>, <i>can&rsquo;t be told apart from its neighbour</i>, or <i>could be an overtone</i> &mdash; the honest one, where sound alone genuinely cannot settle it.</p></div>
+    <div class="card"><div class="ic">🎼</div><h3>Chords in key</h3><p>Add thirds, fifths and sevenths, build triads, invert. It detects the key first and moves by <b>scale steps, not semitones</b> &mdash; a third above C is E, above D is F. Blind transposition gets that wrong half the time.</p></div>
+    <div class="card"><div class="ic">🎚️</div><h3>Tracks that ghost</h3><p>Untick a track and it fades instead of vanishing, so you can still see what your notes have to fit around. Ghosted notes can&rsquo;t be selected or deleted, and are silent on playback.</p></div>
+    <div class="card"><div class="ic">🗺️</div><h3>Arrange view</h3><p>The whole song at a glance, one lane per track, showing where each part plays and how dense it is. Click anywhere to jump the roll there.</p></div>
+  </div>
+
+  <div class="grid3" style="margin-top:18px">
+    <div class="card"><div class="ic">⚡</div><h3>Built for black MIDIs</h3><p><b>23 bytes a note</b>, not 300. A 720,000-note file loads in 3.6&nbsp;s; ten million notes open without a crash. Painting is bounded to what&rsquo;s on screen, and undo is capped by memory rather than by count.</p></div>
+    <div class="card"><div class="ic">🔊</div><h3>Hear your edits</h3><p>Play through your own synth &mdash; OmniMIDI, a soundfont, any MIDI device &mdash; with the playhead following. It sends no key presses; it cannot type into a game.</p></div>
+    <div class="card"><div class="ic">🗂️</div><h3>Tabs, and Auto-align</h3><p>Several MIDIs open at once, with a prompt before replacing unsaved work. Auto-align slides the audio under the notes to 8&nbsp;ms &mdash; and refuses when it isn&rsquo;t sure rather than guessing.</p></div>
+  </div>
+</div></section>
+
 <section id="live"><div class="wrap">
   <div class="kicker">Play it yourself</div>
   <h2>Bring your own keyboard.</h2>
@@ -448,14 +489,30 @@
 
 <!-- VISUALIZER -->
 <section id="visualizer"><div class="wrap">
-  <div class="kicker">See the music</div>
-  <h2>A real black-MIDI visualizer.</h2>
-  <p class="lead">Not a toy — a full Synthesia-style falling-notes engine that holds a steady frame rate even under absurd note counts.</p>
+  <div class="kicker">See the music · rebuilt in 4.5</div>
+  <h2>The visualizer, rebuilt.</h2>
+  <p class="lead">Not a tweak &mdash; a new renderer, a new look, and seven pages of control where there used to be a handful of checkboxes. It draws <b>6.28 million notes in 2 milliseconds</b>.</p>
   <div class="grid3">
-    <div class="card"><div class="ic">⚡</div><h3>10,000+ notes/sec</h3><p>Frame pooling and tuned rendering keep it smooth where other visualizers choke.</p></div>
-    <div class="card"><div class="ic">🎨</div><h3>Per-track colours</h3><p>Every MIDI track gets its own colour, so dense pieces stay readable.</p></div>
-    <div class="card"><div class="ic">🖥️</div><h3>Its own tab + sources</h3><p>Watch a loaded MIDI, live QWERTY, or your MIDI-Connect playing.</p></div>
+    <div class="card"><div class="ic">⚡</div><h3>6.2M notes, 2 ms</h3><p>A real GPU renderer: one quad, instanced per note, with the whole song packed once and left on the card. Measured on a 6,283,185-note file.</p></div>
+    <div class="card"><div class="ic">✨</div><h3>Bloom &amp; shading</h3><p>Progressive dual-filter bloom, notes shaded by the skin&rsquo;s own profile instead of a flat fill, pressed keys that keep their shape and take the note&rsquo;s colour.</p></div>
+    <div class="card"><div class="ic">🎛️</div><h3>Seven pages of control</h3><p><b>Look · Overlay · Motion · Source · Live · Practice · Render.</b> Note and key styles, corner radius, glow and spread, felt, hit glow, shortest-note clamp, skins.</p></div>
+    <div class="card"><div class="ic">📊</div><h3>Its own overlay</h3><p>Fourteen readouts you can toggle individually &mdash; FPS, NPS, polyphony, draw and bloom milliseconds, lateness, memory &mdash; on their own page.</p></div>
+    <div class="card"><div class="ic">🎨</div><h3>Skins &amp; packs</h3><p>Loads Comet/UMP-style resource packs from your own folder: note art, key art, colour profiles, per-track palettes.</p></div>
+    <div class="card"><div class="ic">🖥️</div><h3>Any source</h3><p>Watch a loaded MIDI, your live QWERTY playing, or a connected MIDI keyboard &mdash; falling notes or rising, your choice.</p></div>
   </div>
+</div></section>
+
+<!-- RENDER -->
+<section id="render"><div class="wrap">
+  <div class="kicker">New in 4.5</div>
+  <h2>Render it to a video file.</h2>
+  <p class="lead">Everything the visualizer draws, written to an MP4 &mdash; offline, frame by frame, with no dropped frames and no screen recorder.</p>
+  <div class="grid3">
+    <div class="card"><div class="ic">🎞️</div><h3>Up to 4K, up to 240 fps</h3><p>Pick the resolution and frame rate. It renders frame by frame rather than in real time, so a 120&nbsp;fps output is genuinely 120 distinct frames &mdash; not a recording that dropped half of them.</p></div>
+    <div class="card"><div class="ic">🔊</div><h3>Real audio, muxed in</h3><p>Rendered from a soundfont or your own <b>SFZ</b> sample set with no voice limit, then muxed to the video. Not captured from your speakers.</p></div>
+    <div class="card"><div class="ic">✅</div><h3>It checks its own work</h3><p>RAMP can read the finished MP4 back through its own video&rarr;MIDI engine and compare what it sees against the MIDI it was told to draw &mdash; so a silently empty render can&rsquo;t reach you.</p></div>
+  </div>
+  <p style="margin-top:16px;opacity:.75;font-size:14px">Sits inside the Visualizer tab, under <b>Render</b>. Take as long as it needs &mdash; quality first.</p>
 </div></section>
 
 <!-- CUSTOMIZE -->
@@ -651,6 +708,42 @@ Run <b>build_exe.bat</b>
 </div></section>
 
 <!-- DOWNLOAD -->
+<!-- WHAT'S NEW -->
+<section id="whatsnew"><div class="wrap">
+  <div class="kicker">Changelog</div>
+  <h2>What&rsquo;s new in 4.5 &mdash; and what moved.</h2>
+  <p class="lead">If you are coming from 4.0, a few things are not where you left them. Here is everything that changed.</p>
+
+  <div class="grid3">
+    <div class="card"><div class="ic">✏️</div><h3>New: Editor tab</h3><p>Sits between <b>Transcribe</b> and <b>Qwerty Sheet</b>. Everything above.</p></div>
+    <div class="card"><div class="ic">⚙️</div><h3>Settings rebuilt</h3><p>The long scrolling page is gone. It&rsquo;s a <b>sidebar with search</b> now, in six groups: General, Safety, Piano binds, Editor, Others, Credits. Search reads the real labels and tooltips, so anything added later is findable.</p></div>
+    <div class="card"><div class="ic">📋</div><h3>Logs rebuilt</h3><p>Filter by category &mdash; Problems, Health, Setup, Playback, Conversion, Devices, Files, Settings, Other &mdash; plus text search, timestamps, pause, follow, copy and save.</p></div>
+  </div>
+
+  <h3 style="margin-top:26px">Where things moved</h3>
+  <div class="grid3">
+    <div class="card"><div class="ic">⌨️</div><h3>PianoBinds &rarr; Settings</h3><p>It was a top-level tab; it is a <b>setting</b>, not something you operate mid-song. Now under <b>Settings &rarr; Piano binds</b>.</p></div>
+    <div class="card"><div class="ic">🔗</div><h3>MIDI Merge &rarr; Player</h3><p>Merging is something you do <i>to</i> the song you are about to play, so it now sits beside Great Pretender and MIDI Proof on the Player tab.</p></div>
+    <div class="card"><div class="ic">↓</div><h3>Load from link</h3><p>Was a cramped 180&nbsp;px box eating the title bar. Now <b>one small button</b> that opens a proper dialog &mdash; it pastes for you, and tells you whether the link actually looks like a MIDI.</p></div>
+    <div class="card"><div class="ic">🩺</div><h3>System check, Recovery, Backup</h3><p>Were four buttons that each opened a pop-up. Now their own pages under <b>Settings &rarr; Others</b>, shown inline and sized to their content.</p></div>
+    <div class="card"><div class="ic">💜</div><h3>About &rarr; Credits</h3><p>Now a proper creator card on its own Settings page, with links to YouTube, X, Roblox, Discord and Buy&nbsp;Me&nbsp;a&nbsp;Coffee.</p></div>
+    <div class="card"><div class="ic">🎹</div><h3>Editor &larr; Player</h3><p>The Player&rsquo;s song list feeds the Editor: use <b>From Player</b> in the Editor, or <b>&#10003; Edit file</b> after a transcription finishes.</p></div>
+  </div>
+
+  <h3 style="margin-top:26px">Fixed</h3>
+  <div class="grid3">
+    <div class="card"><div class="ic">🚨</div><h3>Panic actually panics</h3><p>It was byte-for-byte identical to Stop &mdash; so the one key you press <i>because a note is stuck</i> did nothing about the stuck note. It now stops, releases every held key, and sends all-notes-off on all 16 channels.</p></div>
+    <div class="card"><div class="ic">👻</div><h3>Notes no longer vanish</h3><p>Long notes popped in and out during playback when the visualiser&rsquo;s look-back arrived as zero. It is measured from the notes themselves now.</p></div>
+    <div class="card"><div class="ic">🧊</div><h3>No more multi-second freezes</h3><p>The editor&rsquo;s per-frame note cap was 400,000 &mdash; which built 400,000 objects every frame. Now 40,000, and adjustable in Settings.</p></div>
+    <div class="card"><div class="ic">🔤</div><h3>No more clipped labels</h3><p>&ldquo;Refresh&rdquo; showing as &ldquo;efres&rdquo;. Every button now reserves the width its own text needs.</p></div>
+    <div class="card"><div class="ic">🎛️</div><h3>Twelve keybinds</h3><p>Up from eight: next and previous song, reset speed, open editor. New ones start blank, and blank means off. <b>Clear all</b> turns every global hotkey off.</p></div>
+    <div class="card"><div class="ic">🦶</div><h3>Backwards sustain pedals</h3><p>Some pedals send 127 on <i>release</i>, holding every note down for ever. There&rsquo;s an invert toggle now, under Connect.</p></div>
+    <div class="card"><div class="ic">⏳</div><h3>Loading screens</h3><p>RAMP shows one while it starts, and the visualiser shows a banner while it packs a big song for the GPU &mdash; instead of looking frozen.</p></div>
+    <div class="card"><div class="ic">🔌</div><h3>Live input monitor</h3><p>Connect now shows every note, velocity and channel as it arrives, so &ldquo;it isn&rsquo;t working&rdquo; is diagnosable in five seconds.</p></div>
+    <div class="card"><div class="ic">🛟</div><h3>Safety options</h3><p>Release every key when RAMP loses focus, and when playback stops &mdash; plus a Panic button you can click.</p></div>
+  </div>
+</div></section>
+
 <section id="download" style="text-align:center;border:none"><div class="wrap">
   <div class="kicker" style="text-align:center">Ready when you are</div>
   <h2>Get RAMP v4.0.</h2>
@@ -796,6 +889,36 @@ Run <b>build_exe.bat</b>
     ev.stopPropagation();
     w.classList.toggle('expanded');
   });
+})();
+</script>
+<script>
+// One constant. Change the date and everything else follows.
+(function () {
+  var TARGET = new Date("2026-08-28T17:00:00Z").getTime();
+  var d = document.getElementById("cdd"), h = document.getElementById("cdh"),
+      m = document.getElementById("cdm"), s = document.getElementById("cds"),
+      box = document.getElementById("cd");
+  if (!d) return;
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function tick() {
+    var left = TARGET - Date.now();
+    if (left <= 0) {
+      box.innerHTML = '<div style="font-size:12px;letter-spacing:3px;' +
+        'text-transform:uppercase;color:var(--teal);margin-bottom:6px">Out now</div>' +
+        '<div style="font-size:clamp(22px,4vw,34px);font-weight:700;margin-bottom:12px">' +
+        'RAMP <span class="g">v4.5</span> is available</div>' +
+        '<a class="btn btn-p" href="https://github.com/M7xt719/RAMP/releases/latest" ' +
+        'target="_blank" rel="noopener">&darr; Download it</a>';
+      return;
+    }
+    var sec = Math.floor(left / 1000);
+    d.textContent = Math.floor(sec / 86400);
+    h.textContent = pad(Math.floor(sec / 3600) % 24);
+    m.textContent = pad(Math.floor(sec / 60) % 60);
+    s.textContent = pad(sec % 60);
+  }
+  tick();
+  setInterval(tick, 1000);
 })();
 </script>
 </body>
